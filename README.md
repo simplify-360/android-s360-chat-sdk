@@ -6,7 +6,7 @@ The Android S360 Chat SDK enables seamless integration of Simplify360's chat fun
 
 Add the following code to your root `build.gradle` file at the end of repositories:
 
-```gradle
+```markdown
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -14,10 +14,14 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
+```
 
-#Then, add the dependency in your app module's `build.gradle` file:
+Then, add the dependency in your app module's `build.gradle` file:
 
+```agsl
 dependencies {
     implementation 'com.github.simplify-360:android-s360-chat-sdk:2.3'
 }
+```
+
 
