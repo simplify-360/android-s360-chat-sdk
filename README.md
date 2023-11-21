@@ -18,10 +18,54 @@ dependencyResolutionManagement {
 
 Then, add the dependency in your app module's `build.gradle` file:
 
-```agsl
+```markdown
 dependencies {
     implementation 'com.github.simplify-360:android-s360-chat-sdk:2.3'
 }
 ```
 
+## Maven
+
+Add the following repository and dependency to your pom.xml file:
+
+```markdown
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.simplify-360</groupId>
+        <artifactId>android-s360-chat-sdk</artifactId>
+        <version>2.3</version>
+    </dependency>
+</dependencies>
+
+```
+
+## SBT (Scala Build Tool)
+
+Add the following to your build.sbt file:
+
+
+```markdown
+resolvers += "jitpack" at "https://jitpack.io"
+
+libraryDependencies += "com.github.simplify-360" % "android-s360-chat-sdk" % "2.3"
+
+```
+
+## Leiningen
+
+Add the following to your project.clj file:
+
+```markdown
+:repositories [["jitpack" "https://jitpack.io"]]
+
+:dependencies [[com.github.simplify-360/android-s360-chat-sdk "2.3"]]
+
+```
 
