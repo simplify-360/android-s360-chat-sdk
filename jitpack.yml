@@ -5,4 +5,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=S360_Chat_Sdk.aar"
-  - mvn install:install-file $FILE -DgroupId=com.github.simplify-360 -DartifactId=com.android.s360_chat_sdk -Dversion=2.3 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.simplify-360 -DartifactId=com.android.s360_chat_sdk -Dversion=2.4 -Dpackaging=aar -DgeneratePom=true
