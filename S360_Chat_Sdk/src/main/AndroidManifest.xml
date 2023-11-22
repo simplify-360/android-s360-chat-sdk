@@ -5,6 +5,7 @@
 
     <application>
         <activity
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
             android:name=".MainActivity"
             android:exported="false" />
     </application>
