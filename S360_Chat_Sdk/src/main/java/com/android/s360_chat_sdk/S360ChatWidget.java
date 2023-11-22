@@ -5,7 +5,7 @@ import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class S360ChatWidget extends AppCompatActivity {
+public class S360ChatWidget  {
 
     public static void init(Context context, String url) {
         Intent intent = new Intent(context, MainActivity.class);
