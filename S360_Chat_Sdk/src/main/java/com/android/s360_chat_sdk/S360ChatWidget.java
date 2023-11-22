@@ -8,9 +8,9 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class S360ChatWidget  {
-    private WebView webView;
+    private static WebView webView;
 
-    public void init(Context context, String url) {
+    public static void init(Context context, String url) {
         webView = new WebView(context);
 
         // Set a WebViewClient to handle redirects and other events
