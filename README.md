@@ -20,7 +20,7 @@ Then, add the dependency in your app module's `build.gradle` file:
 
 ```markdown
 dependencies {
-    implementation 'com.github.simplify-360:android-s360-chat-sdk:2.3'
+    implementation 'com.github.simplify-360:android-s360-chat-sdk:2.14'
 }
 ```
 Add this code to your `xml` file
@@ -70,7 +70,7 @@ Add the following repository and dependency to your pom.xml file:
     <dependency>
         <groupId>com.github.simplify-360</groupId>
         <artifactId>android-s360-chat-sdk</artifactId>
-        <version>2.3</version>
+        <version>2.14</version>
     </dependency>
 </dependencies>
 
@@ -84,7 +84,7 @@ Add the following to your build.sbt file:
 ```markdown
 resolvers += "jitpack" at "https://jitpack.io"
 
-libraryDependencies += "com.github.simplify-360" % "android-s360-chat-sdk" % "2.3"
+libraryDependencies += "com.github.simplify-360" % "android-s360-chat-sdk" % "2.14"
 
 ```
 
@@ -95,7 +95,7 @@ Add the following to your project.clj file:
 ```markdown
 :repositories [["jitpack" "https://jitpack.io"]]
 
-:dependencies [[com.github.simplify-360/android-s360-chat-sdk "2.3"]]
+:dependencies [[com.github.simplify-360/android-s360-chat-sdk "2.14"]]
 
 ```
 
