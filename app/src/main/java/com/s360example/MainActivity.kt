@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val myWebViewContainer: S360ChatWidget = findViewById(R.id.s360ChatWidget)
-        myWebViewContainer.loadUrl("https://live-chat-static.sprinklr.com/chat/page/floLbo9_o/index.html?appId=60c1d169c96beb5bf5a326f3_app_950954&device=MOBILE&enableClose=true&zoom=false")
+        myWebViewContainer.loadUrl("url-from-s360-dashboard")
 
 
     }

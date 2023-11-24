@@ -4,7 +4,7 @@ The Android S360 Chat SDK enables seamless integration of Simplify360's chat fun
 
 ## Gradle
 
-Add the following code to your root `build.gradle` file at the end of repositories:
+Add the following code to your root `settings.gradle` file at the end of repositories:
 
 ```markdown
 dependencyResolutionManagement {
@@ -22,6 +22,36 @@ Then, add the dependency in your app module's `build.gradle` file:
 dependencies {
     implementation 'com.github.simplify-360:android-s360-chat-sdk:2.3'
 }
+```
+Add this code to your `xml` file
+
+```markdown
+<com.android.s360_chat_sdk.S360ChatWidget
+      android:id="@+id/s360ChatWidget"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+```
+
+Add this code to `activity` file
+
+for `kotlin`
+```markdown
+import com.android.s360_chat_sdk.S360ChatWidget
+
+
+
+  val s360Chat: S360ChatWidget = findViewById(R.id.s360ChatWidget)
+  s360Chat.loadUrl("url-from-s360-dashboard")
+```
+for `java`
+
+```markdown
+import com.android.s360_chat_sdk.S360ChatWidget
+
+
+
+ S360ChatWidget s360Chat = findViewById(R.id.s360ChatWidget);
+  s360Chat.loadUrl("url-from-s360-dashboard");
 ```
 
 ## Maven
